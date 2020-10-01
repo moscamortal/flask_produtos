@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <title> Produtos </title>
+</head>
+<body>
+    <div class="title">
+        <span>{{ data.menus[0]['nome'] }}</span>
+    </div>
+
+    <div class="oferta">
+        {% for item in data.oferta %}
+            {{item}} : {{ data.oferta[item] }}
+        {% endfor %}
+    </div>
+</body>
+
+</html>
+
+
